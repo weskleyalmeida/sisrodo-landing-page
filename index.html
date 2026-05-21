@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SisRodo — Plataforma de gestão rodoviária integrada entre escritório e equipes em campo. Sinalização, relatórios e operações em tempo real.">
+  <title>SisRodo — Gestão Rodoviária Inteligente</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#inicio" class="logo" aria-label="SisRodo — Início">
+        <svg class="logo__icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="40" height="40" rx="10" fill="#0B5FFF"/>
+          <path d="M8 28 L20 12 L32 28" stroke="#F5B800" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="14" y1="22" x2="26" y2="22" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" stroke-linecap="round"/>
+        </svg>
+        <img src="assets/logo_sisrodo1.png" alt="SisRodo" class="logo__img" width="180" height="56">
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <a href="#inicio" class="nav__link">Início</a>
+        <a href="#funcionalidades" class="nav__link">Funcionalidades</a>
+        <a href="#aplicativo" class="nav__link">Aplicativo</a>
+        <a href="#dashboards" class="nav__link">Dashboards</a>
+        <a href="#beneficios" class="nav__link">Benefícios</a>
+        <a href="#contato" class="nav__link">Contato</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <a href="tel:+5585988452146" class="navbar__phone">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <span>(85) 98845-2146</span>
+        </a>
+        <a href="https://w.app/testesisrodo" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">
+          Solicitar Demonstração
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <button class="navbar__toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+        <div class="hero__grid"></div>
+      </div>
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <span class="eyebrow">
+            <span class="eyebrow__dot"></span>
+            Gestão rodoviária inteligente
+          </span>
+          <h1 class="hero__title">
+            Tecnologia que conecta
+            <span class="gradient-text">campo e escritório</span>
+          </h1>
+          <p class="hero__subtitle">
+            Plataforma completa para gestão de sinalização, dispositivos de segurança e operações em rodovias — com sincronização em tempo real entre equipes de campo e gestão central.
+          </p>
+          <ul class="hero__checks">
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/></svg>
+              Sinalização vertical, horizontal e dispositivos
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/></svg>
+              App mobile com sincronização offline
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/></svg>
+              Dashboards e relatórios em tempo real
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/></svg>
+              Multi-tenant para contratos e projetos
+            </li>
+          </ul>
+          <div class="hero__ctas">
+            <a href="https://w.app/testesisrodo" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+              Solicitar Demonstração
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#funcionalidades" class="btn btn--outline">Conhecer o Sistema</a>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal reveal--delay">
+          <div class="mockup-laptop">
+            <div class="mockup-laptop__bar">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="mockup-laptop__screen">
+              <img src="assets/site.png" alt="Dashboard SisRodo com indicadores e gráficos de sinalização" loading="eager">
+            </div>
+          </div>
+          <div class="mockup-phones">
+            <div class="phone phone--1">
+              <div class="phone__frame">
+                <img src="assets/app.jpeg" alt="App SisRodo — seleção de tipo de sinalização" loading="lazy">
+              </div>
+            </div>
+            <div class="phone phone--2">
+              <div class="phone__frame">
+                <img src="assets/sinc.jpeg" alt="App SisRodo — sincronização de dados" loading="lazy">
+              </div>
+            </div>
+          </div>
+          <div class="hero__badge glass">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B5FFF" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <div>
+              <strong>100% Seguro</strong>
+              <span>Dados criptografados</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="hero__stats reveal">
+          <div class="stat-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            <span><strong>100%</strong> Web</span>
+          </div>
+          <div class="stat-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            <span><strong>Multi-tenant</strong></span>
+          </div>
+          <div class="stat-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span><strong>Seguro</strong></span>
+          </div>
+          <div class="stat-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            <span><strong>Tempo real</strong></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Funcionalidades -->
+    <section class="section section--gray" id="funcionalidades">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="eyebrow eyebrow--center">Plataforma completa</span>
+          <h2 class="section__title">Uma solução para toda a<br><span class="gradient-text">operação rodoviária</span></h2>
+          <p class="section__desc">Do levantamento em campo à gestão de contratos, o SisRodo centraliza dados, processos e indicadores em um único ecossistema.</p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card reveal">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>Sinalização Vertical</h3>
+            <p>Gestão completa de placas, suportes e intervenções com histórico, fotos e georreferenciamento.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+            </div>
+            <h3>Sinalização Horizontal</h3>
+            <p>Controle de pinturas, faixas e demarcações com relatórios de necessidades e execução por trecho.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Dispositivos de Segurança</h3>
+            <p>Defensas, barreiras e dispositivos de proteção com cadastro, inspeção e manutenção integrados.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3>Georreferenciamento</h3>
+            <p>Localização precisa por KM, latitude e longitude com visualização em mapa interativo.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+            </div>
+            <h3>Indicadores &amp; KPIs</h3>
+            <p>Dashboards com gráficos de intervenções, produtividade e status por projeto e contrato.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+            </div>
+            <h3>Gestão de Acessos</h3>
+            <p>Permissões granulares, multi-empresa e auditoria para operações enterprise em escala.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Aplicativo Mobile -->
+    <section class="section" id="aplicativo">
+      <div class="container app-section">
+        <div class="app-section__content reveal">
+          <span class="eyebrow">Aplicativo integrado</span>
+          <h2 class="section__title">Equipes de campo<br><span class="gradient-text">conectadas ao escritório</span></h2>
+          <p class="section__desc">O app SisRodo permite levantamentos, fotos e sincronização offline — garantindo que nenhum dado de campo se perca.</p>
+          <ul class="check-list">
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/></svg>
+              Levantamento por tipo de sinalização
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/></svg>
+              Sincronização de dados e fotos
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/></svg>
+              Gestão de projetos e rodovias
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/></svg>
+              Funciona offline com sync automático
+            </li>
+          </ul>
+          <div class="app-modules">
+            <div class="app-module">
+              <div class="app-module__icon">🛑</div>
+              <div>
+                <strong>Sinalização Vertical</strong>
+                <span>Placas e regulamentação</span>
+              </div>
+            </div>
+            <div class="app-module">
+              <div class="app-module__icon">🛣️</div>
+              <div>
+                <strong>Sinalização Horizontal</strong>
+                <span>Faixas e demarcações</span>
+              </div>
+            </div>
+            <div class="app-module">
+              <div class="app-module__icon">🛡️</div>
+              <div>
+                <strong>Dispositivos de Segurança</strong>
+                <span>Defensas e barreiras</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="app-section__phones reveal reveal--delay">
+          <div class="phone-showcase">
+            <div class="phone phone--showcase phone--left">
+              <div class="phone__frame">
+                <img src="assets/app.jpeg" alt="Menu de sinalização no app" loading="lazy">
+              </div>
+            </div>
+            <div class="phone phone--showcase phone--center">
+              <div class="phone__frame">
+                <img src="assets/sinc.jpeg" alt="Tela de sincronização no app" loading="lazy">
+              </div>
+            </div>
+            <div class="phone phone--showcase phone--right">
+              <div class="phone__frame">
+                <img src="assets/projetos-cell.jpeg" alt="Lista de projetos no app" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dashboards -->
+    <section class="section section--gray" id="dashboards">
+      <div class="container dashboard-section">
+        <div class="dashboard-section__visual reveal">
+          <div class="mockup-browser glass">
+            <div class="mockup-browser__bar">
+              <span></span><span></span><span></span>
+              <div class="mockup-browser__url">sisrodo.app/relatorios</div>
+            </div>
+            <div class="mockup-browser__screen">
+              <img src="assets/relatorios.png" alt="Relatório de sinalização horizontal no SisRodo" loading="lazy">
+            </div>
+          </div>
+          <div class="dashboard-float glass">
+            <img src="assets/cad-empresa.png" alt="Gestão de empresas contratadas" loading="lazy">
+          </div>
+        </div>
+
+        <div class="dashboard-section__content reveal reveal--delay">
+          <span class="eyebrow">Dashboards &amp; Relatórios</span>
+          <h2 class="section__title">Informações completas<br><span class="gradient-text">para decisões rápidas</span></h2>
+          <p class="section__desc">Visualize indicadores, exporte relatórios e acompanhe intervenções por rodovia, trecho e contrato — tudo em uma interface clara e profissional.</p>
+          <ul class="check-list">
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/></svg>
+              Indicadores em tempo real
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/></svg>
+              Relatórios personalizados e exportação Excel
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/></svg>
+              Visualização geográfica no mapa
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/></svg>
+              Gráficos de intervenções por período
+            </li>
+          </ul>
+          <a href="#contato" class="btn btn--primary">
+            Ver Relatórios e Indicadores
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section class="section" id="beneficios">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="eyebrow eyebrow--center">Benefícios</span>
+          <h2 class="section__title">Resultados para sua<br><span class="gradient-text">operação rodoviária</span></h2>
+        </div>
+        <div class="benefits-row">
+          <div class="benefit-item reveal">
+            <div class="benefit-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            </div>
+            <h3>Mais produtividade</h3>
+            <p>Automatize cadastros e elimine retrabalho entre campo e escritório.</p>
+          </div>
+          <div class="benefit-item reveal">
+            <div class="benefit-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <h3>Escalabilidade</h3>
+            <p>Gerencie múltiplos contratos, empresas e projetos em uma única plataforma.</p>
+          </div>
+          <div class="benefit-item reveal">
+            <div class="benefit-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            </div>
+            <h3>Dados confiáveis</h3>
+            <p>Histórico completo com fotos, coordenadas e rastreabilidade de intervenções.</p>
+          </div>
+          <div class="benefit-item reveal">
+            <div class="benefit-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3>Agilidade</h3>
+            <p>Sincronização em tempo real reduz atrasos na tomada de decisão.</p>
+          </div>
+          <div class="benefit-item reveal">
+            <div class="benefit-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Conformidade</h3>
+            <p>Atenda exigências contratuais com relatórios padronizados e auditáveis.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="cta-section" id="contato">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <div class="cta-banner__bg">
+            <img src="assets/autocad.jpeg" alt="" aria-hidden="true" loading="lazy">
+            <div class="cta-banner__overlay"></div>
+          </div>
+          <div class="cta-banner__content">
+            <h2>Pronto para transformar sua gestão rodoviária?</h2>
+            <p>Agende uma demonstração personalizada e descubra como o SisRodo pode elevar a eficiência da sua operação.</p>
+          </div>
+          <div class="cta-banner__action">
+            <a href="https://w.app/testesisrodo" class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">
+              Solicitar Demonstração
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="tel:+5585988452146" class="cta-banner__phone">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              (85) 98845-2146
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#inicio" class="logo logo--light">
+          <svg class="logo__icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="40" height="40" rx="10" fill="#0B5FFF"/>
+            <path d="M8 28 L20 12 L32 28" stroke="#F5B800" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="14" y1="22" x2="26" y2="22" stroke="white" stroke-width="1.5" stroke-dasharray="3 3" stroke-linecap="round"/>
+          </svg>
+          <img src="assets/logo_sisrodo1.png" alt="SisRodo" class="logo__img" width="180" height="56">
+        </a>
+        <p>Sistema de Gestão de Rodovias — conectando escritório e campo com tecnologia de ponta.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#funcionalidades">Funcionalidades</a></li>
+          <li><a href="#aplicativo">Aplicativo</a></li>
+          <li><a href="#dashboards">Dashboards</a></li>
+          <li><a href="#beneficios">Benefícios</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Módulos</h4>
+        <ul>
+          <li><a href="#funcionalidades">Sinalização Vertical</a></li>
+          <li><a href="#funcionalidades">Sinalização Horizontal</a></li>
+          <li><a href="#funcionalidades">Dispositivos de Segurança</a></li>
+          <li><a href="#dashboards">Relatórios</a></li>
+          <li><a href="#dashboards">Indicadores</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Contato</h4>
+        <ul class="footer__contact">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:andrellopess@yahoo.com.br">andrellopess@yahoo.com.br</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <a href="tel:+5585988452146">(85) 98845-2146</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Fortaleza, CE - Brasil</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2026 SisRodo — Sistema de Gestão de Rodovias. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
