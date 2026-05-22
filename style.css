@@ -978,7 +978,18 @@ ul { list-style: none; }
   color: rgba(255, 255, 255, 0.9);
 }
 
+.cta-banner__email {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+}
+
 .cta-banner__phone:hover { color: var(--yellow); }
+
+.cta-banner__email:hover { color: var(--yellow); }
 
 .cta-banner .btn--primary {
   background: linear-gradient(135deg, var(--yellow) 0%, #E5A800 100%);
