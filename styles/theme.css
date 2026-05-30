@@ -79,7 +79,7 @@ body {
   border-radius: 100px;
   border: none;
   background: transparent;
-  color: var(--text-secondary, #64748B);
+  color: var(--text-muted, #64748B);
   cursor: pointer;
   padding: 0;
   transition: color      200ms ease,
