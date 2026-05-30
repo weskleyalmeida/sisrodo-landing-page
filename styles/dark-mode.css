@@ -1,0 +1,249 @@
+/* ============================================
+   SisRodo — Dark Mode Component Overrides
+   [data-theme="dark"] has higher specificity,
+   so these rules safely override style.css
+   ============================================ */
+
+/* ---- Base ---- */
+[data-theme="dark"] body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* ---- Navbar ---- */
+[data-theme="dark"] .navbar.scrolled {
+  background: var(--navbar-scrolled-bg);
+  border-bottom-color: var(--navbar-scrolled-border);
+}
+
+[data-theme="dark"] .navbar__toggle span {
+  background: var(--heading);
+}
+
+/* ---- Mobile Nav ---- */
+[data-theme="dark"] .nav {
+  background: var(--mobile-nav-bg);
+  border-bottom-color: var(--mobile-nav-border);
+}
+
+/* ---- Buttons ---- */
+[data-theme="dark"] .btn--outline {
+  background: var(--surface-alt);
+  color: var(--primary);
+  border-color: var(--border);
+}
+
+[data-theme="dark"] .btn--outline:hover {
+  background: var(--primary-subtle);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+/* ---- Hero ---- */
+[data-theme="dark"] .hero__grid {
+  background-image:
+    linear-gradient(rgba(59, 130, 246, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.07) 1px, transparent 1px);
+}
+
+[data-theme="dark"] .hero__orb--1 {
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.22) 0%, transparent 70%);
+  opacity: 0.7;
+}
+
+[data-theme="dark"] .hero__orb--2 {
+  background: radial-gradient(circle, rgba(245, 184, 0, 0.08) 0%, transparent 70%);
+}
+
+[data-theme="dark"] .hero__title {
+  color: var(--heading);
+}
+
+[data-theme="dark"] .hero__subtitle {
+  color: var(--text-muted);
+}
+
+[data-theme="dark"] .hero__checks li {
+  color: var(--gray-700);
+}
+
+[data-theme="dark"] .hero__badge {
+  background: var(--glass);
+  border-color: var(--glass-border);
+}
+
+[data-theme="dark"] .hero__badge strong {
+  color: var(--heading);
+}
+
+[data-theme="dark"] .hero__badge span {
+  color: var(--text-muted);
+}
+
+/* ---- Hero Stats ---- */
+[data-theme="dark"] .hero__stats {
+  background: var(--glass);
+  border-color: var(--glass-border);
+}
+
+[data-theme="dark"] .stat-pill {
+  background: var(--card);
+  border-color: var(--border);
+  color: var(--text-muted);
+}
+
+[data-theme="dark"] .stat-pill strong {
+  color: var(--heading);
+}
+
+[data-theme="dark"] .stat-pill:hover {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 1px var(--primary-subtle-border), var(--shadow-md);
+}
+
+/* ---- Sections ---- */
+[data-theme="dark"] .section--gray {
+  background: var(--bg-alt);
+}
+
+[data-theme="dark"] .section__title {
+  color: var(--heading);
+}
+
+[data-theme="dark"] .section__desc {
+  color: var(--text-muted);
+}
+
+/* ---- Feature Cards ---- */
+[data-theme="dark"] .feature-card {
+  background: var(--card);
+  border-color: var(--border);
+}
+
+[data-theme="dark"] .feature-card:hover {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-lg), 0 0 0 1px var(--primary-subtle-border);
+}
+
+[data-theme="dark"] .feature-card__icon {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(59, 130, 246, 0.18) 100%);
+}
+
+[data-theme="dark"] .feature-card h3 {
+  color: var(--heading);
+}
+
+[data-theme="dark"] .feature-card p {
+  color: var(--text-muted);
+}
+
+/* ---- Check List ---- */
+[data-theme="dark"] .check-list li {
+  color: var(--gray-700);
+}
+
+/* ---- App Modules ---- */
+[data-theme="dark"] .app-module {
+  background: var(--card);
+  border-color: var(--border);
+}
+
+[data-theme="dark"] .app-module:hover {
+  border-color: var(--primary);
+}
+
+[data-theme="dark"] .app-module__icon {
+  background: var(--surface-alt);
+  box-shadow: none;
+}
+
+[data-theme="dark"] .app-module strong {
+  color: var(--heading);
+}
+
+[data-theme="dark"] .app-module span {
+  color: var(--text-muted);
+}
+
+/* ---- Mockup Browser ---- */
+[data-theme="dark"] .mockup-browser__bar {
+  background: var(--surface-alt);
+  border-bottom-color: var(--border);
+}
+
+[data-theme="dark"] .mockup-browser__url {
+  background: var(--card);
+  color: var(--text-muted);
+}
+
+/* ---- Dashboard Float ---- */
+[data-theme="dark"] .dashboard-float {
+  border-color: var(--border);
+  box-shadow: var(--shadow-lg), 0 0 24px rgba(59, 130, 246, 0.1);
+}
+
+/* ---- Benefits ---- */
+[data-theme="dark"] .benefit-item:hover {
+  background: var(--card);
+  border-color: var(--border);
+  box-shadow: var(--shadow-md);
+}
+
+[data-theme="dark"] .benefit-item h3 {
+  color: var(--heading);
+}
+
+[data-theme="dark"] .benefit-item p {
+  color: var(--text-muted);
+}
+
+/* ---- Mockups — subtle glow ---- */
+[data-theme="dark"] .mockup-laptop {
+  box-shadow: var(--shadow-xl), 0 0 40px rgba(59, 130, 246, 0.08);
+}
+
+[data-theme="dark"] .phone__frame {
+  background: #0F1929;
+  box-shadow: var(--shadow-lg), 0 0 0 1px rgba(59, 130, 246, 0.1);
+}
+
+[data-theme="dark"] .phone--center .phone__frame {
+  border-color: rgba(59, 130, 246, 0.3);
+  box-shadow: var(--shadow-xl), 0 0 30px rgba(59, 130, 246, 0.15);
+}
+
+/* ---- Gradient text — cooler in dark ---- */
+[data-theme="dark"] .gradient-text {
+  background: linear-gradient(135deg, #60A5FA 0%, #38BDF8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ---- Footer ---- */
+[data-theme="dark"] .footer {
+  background: #060d1a;
+  border-top: 1px solid var(--border);
+}
+
+[data-theme="dark"] .footer__bottom {
+  border-top-color: var(--border);
+}
+
+/* ---- Scrollbar ---- */
+[data-theme="dark"] ::-webkit-scrollbar {
+  width: 8px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-track {
+  background: var(--bg-alt);
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 4px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}

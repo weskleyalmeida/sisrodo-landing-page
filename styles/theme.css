@@ -1,0 +1,123 @@
+/* ============================================
+   SisRodo — Theme Transitions & Toggle UI
+   Only adds transitions that don't exist yet
+   in style.css (to avoid overwriting them)
+   ============================================ */
+
+/* Body + sections: only background not covered by style.css */
+body {
+  transition: background-color 350ms cubic-bezier(0.4, 0, 0.2, 1),
+              color            350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Elements that have NO transition in style.css but change color in dark mode */
+.hero__title,
+.hero__subtitle,
+.hero__checks li,
+.section__title,
+.section__desc,
+.feature-card h3,
+.feature-card p,
+.check-list li,
+.app-module strong,
+.app-module span,
+.benefit-item h3,
+.benefit-item p,
+.hero__badge strong,
+.hero__badge span,
+.stat-pill strong,
+.mockup-browser__url,
+.eyebrow {
+  transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Add background-color to elements whose style.css transition omits it */
+.section--gray {
+  transition: background-color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero__stats,
+.hero__badge {
+  transition: background-color 350ms cubic-bezier(0.4, 0, 0.2, 1),
+              border-color     350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar__toggle span {
+  transition: background-color 200ms ease,
+              transform var(--transition),
+              opacity  var(--transition);
+}
+
+.footer,
+.footer__bottom {
+  transition: background-color 350ms cubic-bezier(0.4, 0, 0.2, 1),
+              border-color     350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ============================================
+   Theme Toggle Component
+   ============================================ */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  background: var(--surface-alt, #F1F5F9);
+  border: 1px solid var(--border, #E2E8F0);
+  border-radius: 100px;
+  padding: 3px;
+  gap: 1px;
+  flex-shrink: 0;
+  transition: background-color 350ms cubic-bezier(0.4, 0, 0.2, 1),
+              border-color     350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.theme-toggle__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 26px;
+  border-radius: 100px;
+  border: none;
+  background: transparent;
+  color: var(--text-muted, #64748B);
+  cursor: pointer;
+  padding: 0;
+  transition: color      200ms ease,
+              background 200ms ease,
+              box-shadow 200ms ease;
+  outline: none;
+}
+
+.theme-toggle__btn:hover {
+  color: var(--primary, #0B5FFF);
+}
+
+.theme-toggle__btn.active {
+  background: var(--surface, #FFFFFF);
+  color: var(--primary, #0B5FFF);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+.theme-toggle__btn svg {
+  width: 14px;
+  height: 14px;
+  pointer-events: none;
+  flex-shrink: 0;
+}
+
+.theme-toggle__btn:focus-visible {
+  outline: 2px solid var(--primary, #0B5FFF);
+  outline-offset: 2px;
+}
+
+@media (max-width: 640px) {
+  .theme-toggle__btn {
+    width: 28px;
+    height: 24px;
+  }
+
+  .theme-toggle__btn svg {
+    width: 13px;
+    height: 13px;
+  }
+}
