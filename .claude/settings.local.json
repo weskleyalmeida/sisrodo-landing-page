@@ -3,7 +3,8 @@
     "allow": [
       "Bash(start \"\" \"http://localhost:5500\")",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5500)",
-      "Bash(npx --version)"
+      "Bash(npx --version)",
+      "Bash(node -e \"const http=require\\('http'\\),fs=require\\('fs'\\),path=require\\('path'\\);const s=http.createServer\\(\\(req,res\\)=>{let f=path.join\\('c:/Users/wesle/Desktop/IMPORTANTE/sisrodo-landing-page',req.url==='/'?'index.html':req.url\\);try{res.writeHead\\(200\\);fs.createReadStream\\(f\\).pipe\\(res\\)}catch\\(e\\){res.writeHead\\(404\\);res.end\\(\\)}}\\);s.listen\\(8080,\\(\\)=>console.log\\('Server on 8080'\\)\\)\")"
     ]
   }
 }
